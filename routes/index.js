@@ -1,8 +1,8 @@
 import Router from "express-promise-router";
-import get from "./product/get/get.js";
+import product from "./product/index.js";
 
 const router = Router();
 
-router.get("/", get);
+router.use("/product", product);
 
 export default router;
