@@ -1,4 +1,4 @@
-import { product } from "../../../models/product/index";
+import product from "../../../models/product/index.js";
 
 export default async (req, res) => {
   try {
