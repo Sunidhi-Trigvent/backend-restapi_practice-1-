@@ -1,4 +1,4 @@
-import product from "../../../models/index.js";
+import product from "../../../models/product/index.js";
 
 export default async (req, res) => {
   let data = await product.find();

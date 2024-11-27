@@ -1,6 +1,6 @@
-import { product } from "../../../models/product/index";
+import product from "../../../models/product/index.js";
 
 export default async (req, res) => {
-  console.log(req.params);
-  let data = await product.deleteOne(req.params);
+  console.log(req.productId);
+  let data = await product.deleteOne(req.productId);
 };
