@@ -6,7 +6,7 @@ export default async (req, res) => {
     let data = new product(body);
     let result = await data.save();
     console.log(result);
-    response.send(result);
+    res.send(result);
   } catch (error) {
     res.status(403).send(error);
   }
