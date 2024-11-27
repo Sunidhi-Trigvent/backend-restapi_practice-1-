@@ -5,5 +5,5 @@ export default async (req, res) => {
   const { productId } = req.params;
 
   console.log(productId);
-  let data = await product.deleteOne({ _id: productId });
+  let data = await product.updateOne({ _id: productId }, { $set: req.body });
 };
