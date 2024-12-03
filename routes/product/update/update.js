@@ -1,4 +1,4 @@
-import product from "../../models/product/index.js";
+import product from "../../../models/product/index.js";
 
 export default async (req, res) => {
   // Extract the productId from the request parameters

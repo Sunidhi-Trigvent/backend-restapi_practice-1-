@@ -2,7 +2,7 @@ import Router from "express-promise-router";
 import get from "./get/get.js";
 import post from "./post/post.js";
 import _delete from "./delete/delete.js";
-import update from "../update/update.js";
+import update from "./update/update.js";
 import extractParam from "../../middleware/extractParams.js";
 
 const router = Router();
